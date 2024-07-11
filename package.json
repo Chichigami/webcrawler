@@ -2,12 +2,15 @@
   "name": "webcrawler",
   "version": "1.0.0",
   "description": "Bootdev webcrawler project",
-  "main": "main.js",
+  "type": "module",
   "scripts": {
     "start": "node main.js",
-    "test": "jest"
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js"
   },
-  "author": "",
+  "jest": {
+    "transform": {}
+  },
+  "author": "Chichigami",
   "license": "ISC",
   "devDependencies": {
     "jest": "^29.7.0"
